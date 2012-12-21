@@ -1,0 +1,134 @@
+Net-AMQP-Haiku version 0.01
+===========================
+
+A Simple Perl Module using Net::AMQP. 
+
+This module is designed to be as simple as possible -- this module
+shall only require Net::AMQP and Try::Tiny to run, and be compatible from Perl
+version 5.8.8 and up.
+
+USAGE
+
+    Module Import and Object Instantiation
+    
+        use Net::AMQP::Haiku;
+        my $bugs = Net::AMQP::Haiku->new({
+            host=> 'localhost',
+            spec_file => '/path/to/spec/file/amqp'
+        });
+          
+    Open a Channel
+    
+        # open default channel (set to 1)
+        $bugs->open_channel();
+        
+        # open a specific channel
+        my $channel_id = 72;
+        $bugs->open_channel($channel_id);
+        
+    Set the Queue
+    
+        # basic example for a queue named foo
+        $bugs->set_queue('foo');
+        
+        # full options
+        $bugs->set_queue($queue_name, { auto_delete => 1,
+                                        no_ack => 0,
+                                        nowait => 0,
+                                        durable => 1,
+                                        passive => 0,
+                                        ticket => 0,
+                                        exclusive => 0 });
+        
+    Basic Publish
+    
+        # send a message using defaults
+        $bugs->send("ohai!");
+        
+        # send a message using all available options
+        $bugs->send("ohai!", $queue_name, { routing_key => $routing_key,
+                                            channel=> $channel,
+                                            reply_to => $reply_to,
+                                            correlation_id => $correlation_id });
+        
+    Basic Message Retrieval
+    
+        # basic example after open_channel() and set_queue()
+        # receive() and get() are synonymous
+        print $bugs->receive();
+        $msg = $bugs->receive();
+        $msg = $bugs->get();
+        
+        # full options
+        $msg = $bugs->get($queue_name, {no_ack => 0});
+        
+    Basic Producer
+        
+        # basic example after open_channel() and set_queue()
+        $bugs->send("test message");
+        
+    Basic Consumer
+        
+        # basic consumer after open_channel() and set_queue()
+        $bugs->nom( { queue => $queue_name} );
+        # stop consuming
+        $bugs->halt_consumption();
+        # or
+        $bugs->halt_consumption($consumer_tag);
+        
+        
+    Purge a Queue
+        
+        $bugs->purge_queue($queue_name);
+        
+    Delete a Queue
+    
+        $bugs->delete_queue($queue_name);
+
+DEPENDENCIES
+
+This module requires the following modules for operation:
+
+    Net::AMQP
+    Try::Tiny
+  
+For testing purposes, these modules are required:
+
+    Test::Exception
+    YAML
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test [OPTIONAL]
+   make install
+
+DEVELOPMENT STATE
+
+At this point of the code, it's still under heavy development. So far, I can
+only account for basic publishing, binding and get to work. I have not
+heavily tested consumers yet, but that's currently in progress.
+
+Pull requests are more than welcome.
+
+FEATURES IN PROGRESS
+
+* Finish the consumer method
+
+* Decide whether to add an internal logger or just provide a means of importing
+  or using other logging modules
+
+COPYRIGHT AND LICENCE
+
+The module shall follow the same licensing scheme as Perl.
+
+Copyright (C) 2012 by Rebs Guarina
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.8.8 or,
+at your option, any later version of Perl 5 you may have available.
+
+
