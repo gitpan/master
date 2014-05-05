@@ -1,17 +1,14 @@
-use ExtUtils::MakeMaker;
 
+
+use ExtUtils::MakeMaker;
+# See lib/ExtUtils/MakeMaker.pm for details of how to influence
+# the contents of the Makefile that is written.
 WriteMakefile(
-  'NAME'          => 'ML::SVM',
-  'VERSION_FROM'  => 'lib/ML/SVM.pm',
-  'PREREQ_PM'     => {
-    # Require Threading
-    'threads' => 0,
-    'threads::shared' => 0,
-    'Math::Trig' => 0,
-    'Getopt::Long' => 0,
-    'Storable' => 0,
-    'IO::Compress::Bzip2' => 0
-  },
-  'ABSTRACT_FROM' => 'lib/ML/SVM.pm',
-  'AUTHOR'        => 'Saul Rosa <rosa.saul@megaframe.org>'
+    NAME         => 'Math::Palindrome',
+    VERSION_FROM => 'lib/Math/Palindrome.pm', # finds \$VERSION
+    AUTHOR       => 'Aureliano C. P. Guedes (guedes.aureliano@gmail.com)',
+    ABSTRACT     => 'Tool to manipulate palindromes numbers.',
+    PREREQ_PM    => {
+                     'Test::Simple' => 0.44,
+                    },
 );
