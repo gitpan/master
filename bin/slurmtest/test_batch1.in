@@ -1,0 +1,8 @@
+perl /data/apps/software/slurm_scripts/example/testioselect.pl 1
+
+perl  /data/apps/software/slurm_scripts/example/testioselect.pl 2
+
+perl  /data/apps/software/slurm_scripts/example/testioselect.pl 3
+
+perl  /data/apps/software/slurm_scripts/example/testioselect.pl 4
+

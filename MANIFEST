@@ -1,9 +1,12 @@
-MANIFEST
-README
-LICENSE
-Todo
 Changes
+lib/Runner/Init.pm
+lib/Runner/MCE.pm
+lib/Runner/Slurm.pm
+lib/Runner/Threads.pm
 Makefile.PL
-lib/Math/Palindrome.pm
-t/001_load.t
-t/others.t
+MANIFEST			This list of files
+README
+t/00-load.t
+t/manifest.t
+t/pod-coverage.t
+t/pod.t

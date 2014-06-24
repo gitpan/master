@@ -1,0 +1,15 @@
+2014/06/24 11:56:36-Runner::Init::_log_commands: DEBUG Starting job 5 with PID 98993
+ 2014/06/24 11:56:36-Runner::Init::_log_commands: DEBUG Cmd is perl  /data/apps/software/slurm_scripts/example/testioselect.pl 9
+ 2014/06/24 11:56:41-Runner::Init::_log_commands: ERROR StdErr:4vLhZGbzxq
+ 2014/06/24 11:56:42-Runner::Init::_log_commands: ERROR StdErr:FYOEsXk4Wx
+ 2014/06/24 11:56:44-Runner::Init::_log_commands: ERROR StdErr:EXWCeO4nPk
+ 2014/06/24 11:56:46-Runner::Init::_log_commands: ERROR StdErr:4jjyMxJzWh
+ 2014/06/24 11:56:49-Runner::Init::_log_commands: ERROR StdErr:SSB8sG8EFV
+ 2014/06/24 11:56:51-Runner::Init::_log_commands: INFO #####################################
+
+ARG is 9
+#####################################
+StdOut:Mo4irxew9QStdOut:HXc9l3rB69StdOut:kzB2RO5yRJStdOut:oIkseInJuaStdOut:z3noDMoRv5
+ 2014/06/24 11:56:51-Runner::Init::_log_commands: DEBUG Finishing job 5 with PID 98993 and ExitCode 0
+ 2014/06/24 11:56:51-Runner::Init::_log_commands: INFO Total execution time 0 years, 00 months, 0 days, 00 hours, 00 minutes, 15 seconds
+ 

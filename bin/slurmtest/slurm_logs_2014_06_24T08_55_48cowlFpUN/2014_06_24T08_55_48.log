@@ -1,0 +1,18 @@
+2014/06/24 11:55:48-Runner::Slurm::run: INFO hello world
+ 2014/06/24 11:55:48-Runner::Slurm::submit_slurm: INFO Submitted batch job 15198
+ 2014/06/24 11:55:48-Runner::Slurm::submit_slurm: INFO Submitted batch job 15199
+ 2014/06/24 11:55:48-Runner::Slurm::submit_slurm: INFO Submitted batch job 15200
+ 2014/06/24 11:55:48-Runner::Slurm::submit_slurm: INFO Submitted batch job 15201
+ 2014/06/24 11:55:48-Runner::Slurm::parse_file_slurm: DEBUG All the jobs $VAR1 = [
+          [
+            '15198'
+          ],
+          [
+            '15199',
+            '15200'
+          ],
+          [
+            '15201'
+          ]
+        ];
+ 

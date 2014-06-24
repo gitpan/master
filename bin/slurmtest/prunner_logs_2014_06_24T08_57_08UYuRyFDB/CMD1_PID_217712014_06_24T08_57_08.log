@@ -1,0 +1,16 @@
+2014/06/24 11:57:08-Runner::Init::_log_commands: DEBUG Starting job 1 with PID 21773
+ 2014/06/24 11:57:08-Runner::Init::_log_commands: DEBUG Cmd is perl  /data/apps/software/slurm_scripts/example/testioselect.pl 12
+ 2014/06/24 11:57:13-Runner::Init::_log_commands: ERROR StdErr:UjudkpIXfD
+ 2014/06/24 11:57:15-Runner::Init::_log_commands: ERROR StdErr:KjWuG3aJCm
+ 2014/06/24 11:57:17-Runner::Init::_log_commands: ERROR StdErr:C2VqKd0yAG
+ 2014/06/24 11:57:18-Runner::Init::_log_commands: ERROR StdErr:gkx5od3A9l
+ 2014/06/24 11:57:19-Runner::Init::_log_commands: ERROR StdErr:zxCo7Alwox
+ 2014/06/24 11:57:22-Runner::Init::_log_commands: ERROR StdErr:PA35dtETR8
+ 2014/06/24 11:57:23-Runner::Init::_log_commands: INFO #####################################
+
+ARG is 12
+#####################################
+StdOut:RJ6Do8BpQhStdOut:61fJmyCchxStdOut:YwfUxtiXDxStdOut:YeODZbLx7A
+ 2014/06/24 11:57:23-Runner::Init::_log_commands: DEBUG Finishing job 1 with PID 21773 and ExitCode 0
+ 2014/06/24 11:57:23-Runner::Init::_log_commands: INFO Total execution time 0 years, 00 months, 0 days, 00 hours, 00 minutes, 15 seconds
+ 

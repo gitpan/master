@@ -1,0 +1,17 @@
+2014/06/24 11:56:21-Runner::Init::_log_commands: DEBUG Starting job 1 with PID 98970
+ 2014/06/24 11:56:21-Runner::Init::_log_commands: DEBUG Cmd is perl  /data/apps/software/slurm_scripts/example/testioselect.pl 5
+ 2014/06/24 11:56:26-Runner::Init::_log_commands: ERROR StdErr:mYcfWF8GSU
+ 2014/06/24 11:56:27-Runner::Init::_log_commands: ERROR StdErr:WVJGmuXyZB
+ 2014/06/24 11:56:30-Runner::Init::_log_commands: ERROR StdErr:J0cSs2FiVi
+ 2014/06/24 11:56:32-Runner::Init::_log_commands: ERROR StdErr:kanzO8vv4H
+ 2014/06/24 11:56:33-Runner::Init::_log_commands: ERROR StdErr:hxFiS5oTbx
+ 2014/06/24 11:56:34-Runner::Init::_log_commands: ERROR StdErr:2qdF4Zi86b
+ 2014/06/24 11:56:35-Runner::Init::_log_commands: ERROR StdErr:W1eEi9teyo
+ 2014/06/24 11:56:36-Runner::Init::_log_commands: INFO #####################################
+
+ARG is 5
+#####################################
+StdOut:UtloUUgGDRStdOut:UBSf4jNmEzStdOut:1WYPcuyai6
+ 2014/06/24 11:56:36-Runner::Init::_log_commands: DEBUG Finishing job 1 with PID 98970 and ExitCode 0
+ 2014/06/24 11:56:36-Runner::Init::_log_commands: INFO Total execution time 0 years, 00 months, 0 days, 00 hours, 00 minutes, 15 seconds
+ 
