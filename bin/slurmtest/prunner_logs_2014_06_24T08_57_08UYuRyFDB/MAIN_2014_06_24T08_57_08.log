@@ -1,6 +1,0 @@
-2014/06/24 11:57:08-Runner::MCE::parse_file_mce: INFO Enqueuing command:
-perl  /data/apps/software/slurm_scripts/example/testioselect.pl 12
- 2014/06/24 11:57:08-Runner::MCE::parse_file_mce: INFO Enqueuing command:
-perl  /data/apps/software/slurm_scripts/example/testioselect.pl 13
- 2014/06/24 11:57:23-Runner::MCE::go: INFO Total execution time 0 years, 00 months, 0 days, 00 hours, 00 minutes, 15 seconds
- 

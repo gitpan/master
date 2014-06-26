@@ -14,5 +14,5 @@ inc/
 nytprof.out
 pod2htm*.tmp
 pm_to_blib
-Runner-Init-*
-Runner-Init-*.tar.gz
+Dancer2-Plugin-Locale-Wolowitz-*
+Dancer2-Plugin-Locale-Wolowitz-*.tar.gz

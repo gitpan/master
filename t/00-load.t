@@ -1,16 +1,10 @@
-#!perl -T
-use 5.006;
 use strict;
-use warnings FATAL => 'all';
-use Test::More;
+use warnings;
 
-plan tests => 4;
+use Test::More tests => 1;                      # last test to print
 
 BEGIN {
-    use_ok( 'Runner::Init' ) || print "Bail out!\n";
-    use_ok( 'Runner::MCE' ) || print "Bail out!\n";
-    use_ok( 'Runner::Threads' ) || print "Bail out!\n";
-    use_ok( 'Runner::Slurm' ) || print "Bail out!\n";
+    use_ok ( 'Dancer2::Plugin::Locale::Wolowitz' ) || print 'Bail out';
 }
 
-diag( "Testing Runner::Init $Runner::Init::VERSION, Perl $], $^X" );
+diag( "Testing Dancer2::Plugin::Locale::Wolowitz $Dancer2::Plugin::Locale::Wolowitz::VERSION, Perl $], $^X" );
