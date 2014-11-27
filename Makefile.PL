@@ -1,32 +1,20 @@
-use 5.0010;
-use strict;
-use warnings FATAL => 'all';
+use 5.008008;
 use ExtUtils::MakeMaker;
-
+# See lib/ExtUtils/MakeMaker.pm for details of how to influence
+# the contents of the Makefile that is written.
 WriteMakefile(
-    NAME             => 'Dancer2::Plugin::Locale::Wolowitz',
-    AUTHOR           => q{Menno Blom <blom@cpan.org>},
-    VERSION_FROM     => 'lib/Dancer2/Plugin/Locale/Wolowitz.pm',
-    ABSTRACT_FROM    => 'lib/Dancer2/Plugin/Locale/Wolowitz.pm',
-    LICENSE          => 'Artistic_2_0',
-    PL_FILES         => {},
-    MIN_PERL_VERSION => 5.0010,
-    CONFIGURE_REQUIRES => {
-        'ExtUtils::MakeMaker' => 0,
-    },
-    BUILD_REQUIRES => {
-        'Test::More' => "0.96",
-        'Test::TCP'  => "0",
-    },
-    PREREQ_PM => {
-        'Dancer2'          => "0",
-        'Locale::Wolowitz' => "0",
-    },
-    dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
-    clean => { FILES => 'Dancer2-Plugin-Locale-Wolowitz-*' },
-    META_MERGE => {
-        resources => {
-            repository => 'https://github.com/b10m/p5-Dancer2-Plugin-Locale-Wolowitz',
-        },
-    },
+    NAME              => 'Webqq::Client',
+    VERSION_FROM      => 'src/Webqq/Client.pm', # finds $VERSION
+    PREREQ_PM         => {
+        "JSON"                  => 0,
+        "Digest::MD5"           => 0,
+        "AnyEvent::UserAgent"   => 0,
+        "LWP::UserAgent"        => 0,
+        "LWP::Protocol::https"  => 0,
+    }, # e.g., Module::Name => 1.1
+    ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
+      (
+       #ABSTRACT_FROM  => 'src/Webqq/Client.pm', # retrieve abstract from module
+       ABSTRACT       => 'A webqq robot in Perl Language',
+       AUTHOR         => 'Perfi <sjdy521@163.com>') : ()),
 );
